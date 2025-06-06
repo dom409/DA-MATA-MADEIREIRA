@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Da Mata Madeireira</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #003300;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+    }
+
+    /* Flex container para logo e texto */
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .header-container img {
+      height: 70px;
+      width: auto;
+    }
+
+    .header-text h1, .header-text p {
+      margin: 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1b5e20;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .produto {
+      background-color: #f0fff0;
+      border: 1px solid #c8e6c9;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .produto img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Botão de WhatsApp flutuante */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .whatsapp-float a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      .produto {
+        width: 100%;
+      }
+      .header-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <!-- Font Awesome para ícone WhatsApp -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="https://i.ibb.co/sJPTnF0k/LOGOMARCA-DA-MATA-MADEIREIRA-removebg-preview.png" alt="Logo Da Mata Madeireira" />
+      <div class="header-text">
+        <h1>Da Mata Madeireira</h1>
+        <p>Materiais de Construção e Madeiras em Geral</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos a Da Mata Madeireira, especializada em madeiras de qualidade para sua obra ou reforma. Atendemos com compromisso, agilidade e confiança em toda a região.</p>
+  </section>
+
+  <section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x150.png?text=Tábuas" alt="Tábuas de madeira">
+        <h3>Tábuas</h3>
+        <p>Madeiras para construção em diversas medidas.</p>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x150.png?text=Vigas+e+Caibros" alt="Caibros e ripas de madeira">
+        <h3>Vigas e Caibros</h3>
+        <p>Ideal para estruturas e coberturas.</p>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x150.png?text=Compensado" alt="Compensado de madeira empilhado">
+        <h3>Compensado</h3>
+        <p>Folhas resistentes para múltiplas aplicações.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>📞 Telefone: (83) 99412-0066<br>
+       📱 WhatsApp: (83) 99154-0165<br>
+       📍 Endereço: Rua Severiano Macedo, 295 - Boqueirão/Paraíba<br>
+       ✉️ Email: contato@madeireiradamata-pb@hotmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Da Mata Madeireira. Todos os direitos reservados.</p>
+  </footer>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/5583991540165" target="_blank" title="Fale conosco no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</body>
+</html>
